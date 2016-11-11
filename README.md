@@ -1,9 +1,9 @@
 ### Portfolio
 ***
 
-Write introduction
+Knowing that there is always something new to learn in development is both astonishing and intimidating. I find myself wanting to know as much as possible, never trully satisified with my present set of skills. But I am self aware that this is a great thing, as it motivates me to wake up earlier each day and learn more.
 
-Check out my LinkedIn and my blog to learn more about me.
+Check out my LinkedIn(https://www.linkedin.com/in/templenaylor) and my blog to learn more about me.
 
 #### Websites
 * [HTML/CSS & JavaScript/Jquery Integration Examples](./Websites)
