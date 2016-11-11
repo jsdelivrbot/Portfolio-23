@@ -1,6 +1,7 @@
 ### City Library Drill
 ***
 
+### About
 In this creation, I wanted to create a database that would allow multiple Library branches to keep track of books, titles, authors, 
 book copies in each branch, borrowers, and book loans. I used SQL SERVER 2008 in order to do this.
 
@@ -10,6 +11,7 @@ With this database you can keep track of books, loan history, and so on.
 I also attached some queries I created for this database as well as a couple procedures which you can find in the seperate file upload 
 named Queries/Procedures. 
 
+### Impediments I Faced and Overcame
 One of the biggest challenges I faced with this database was creating a query that would retrieve how many book copies, listed by title, from Author George Orwell was in the 
 Library Branch "Central".
 
