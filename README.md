@@ -11,7 +11,7 @@ Check out my LinkedIn and my blog to learn more about me.
 
 #### Database & SQL
 * [Database & SQL Examples](./Database-SQL)
-* [City Library Database](./Database-SQL/City-Library-Drill)
+* [City Library Database](./Database-SQL/City-Library-Database)
 
 
 #### Python
