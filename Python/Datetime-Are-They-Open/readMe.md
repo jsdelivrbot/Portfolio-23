@@ -9,4 +9,4 @@ The most time-consuming problem that I confronted was arguably just trying to ge
 
 I really used my knowledge of JavaScript to help with this solution of checking time-zones. Learning about if/else statements in JavaScript made it easy to implement a solution in Python for this script.
 
-Return to [portfolio](../../../)
+Return to [portfolio](../../../../)
