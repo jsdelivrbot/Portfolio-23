@@ -16,7 +16,7 @@ Check out my LinkedIn and my blog to learn more about me.
 
 #### Python
 * [Python Examples](./Python)
-* [DateTime-Are They Open?](./Python/Datetime-Drill)
+* [DateTime-Are They Open?](./Python/Datetime-Are-They-Open?)
 
 #### C#  
 * [C# Examples](./C-Sharp)
