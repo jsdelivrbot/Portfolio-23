@@ -5,7 +5,7 @@ Write introduction
 
 Check out my LinkedIn and my blog to learn more about me.
 
-#### HTML & CSS
+#### Websites
 * [HTML/CSS & JavaScript/Jquery Integration Examples](./Websites)
 
 
