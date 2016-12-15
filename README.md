@@ -23,6 +23,6 @@ Check out my LinkedIn(https://www.linkedin.com/in/templenaylor) and my blog to l
 * [File Transfer Drill](./C-Sharp/File-Transfer-Drill)
 
 #### Websites
-* [Porfolio](./Instagram)
+* [Instagram](./Instagram)
 
 
