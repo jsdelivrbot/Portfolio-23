@@ -6,7 +6,7 @@ Knowing that there is always something new to learn in development is both aston
 Check out my LinkedIn(https://www.linkedin.com/in/templenaylor) and my blog to learn more about me.
 
 #### Websites
-* [HTML/CSS & JavaScript/Jquery Integration Examples](./Websites)
+* [Instagram](./Websites)
 
 
 #### Database & SQL
@@ -22,7 +22,6 @@ Check out my LinkedIn(https://www.linkedin.com/in/templenaylor) and my blog to l
 * [C# Examples](./C-Sharp)
 * [File Transfer Drill](./C-Sharp/File-Transfer-Drill)
 
-#### Websites
-* [Instagram](./Instagram)
+
 
 
