@@ -1,0 +1,183 @@
+/* Small phones from 1024px */
+@media only screen and (max-width: 1440x) {
+
+}
+
+
+/* Small tablet to big tablet from 768-1023px */
+@media only screen and (max-width: 1023px) {
+
+    /*------  HEADER PAGE -----------*/        
+
+
+
+}
+
+
+/* Small Phones to small Tablets from 481-767px */
+@media only screen and (max-width: 767px) {
+
+    /*------  HEADER PAGE -----------*/    
+
+    .name {
+        text-align: center;
+        font-size: 90%;
+        margin-top: -50%;
+        white-space: nowrap;
+        overflow: hidden;
+        float: none;
+    }
+
+    .name h5 {
+        color: black;
+        font-size: 170%;
+        padding-bottom: 30%;
+        text-align: center;
+        float: none;
+    }
+
+    .social-links {
+        font-size: 250%;
+        position:absolute;
+        bottom:0;
+        width:100%;
+        height:130px;
+    }
+
+
+
+    /*------  ABOUT PAGE -----------*/
+
+    #about {
+        font-size: 80%;
+    }
+
+
+    /*------  WORK PAGE -----------*/
+
+    .work-title {
+        font-size: 80%;
+    }
+
+    .model-page {
+        padding-bottom: 15%; /* Makes up for img size difference */
+    }
+
+    .apple-page {
+        padding-bottom: 15%;
+    }
+
+    .button-info {
+        font-size: 250%;
+    }
+
+
+
+    /*------  CONTACT PAGE -----------*/
+
+    .contact-form {
+        margin-top: -15%;
+        font-size: 80%;
+    }
+
+
+
+    /*------  BLOG PAGE -----------*/
+
+    .first-line {
+
+    }
+
+    .second-line {
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+
+    .third-line {
+        padding-top: 50%;
+    }
+
+}
+
+
+/* Small phones from 0-480px */
+@media only screen and (max-width: 480px) {
+
+    /*------  HEADER PAGE -----------*/  
+
+    .name {
+        text-align: center;
+        font-size: 75%;
+        margin-top: -100%;
+        white-space: nowrap;
+        overflow: hidden;
+        float: none;
+    }
+
+    .name h5 {
+        color: black;
+        font-size: 160%;
+        padding-bottom: 30%;
+        text-align: center;
+        float: none;
+    }
+
+    .social-links {
+        font-size: 240%;
+    }
+
+
+
+    /*------  ABOUT PAGE -----------*/
+
+    #about {
+        font-size: 80%;
+    }
+
+
+    /*------  WORK PAGE -----------*/
+
+    .work-title {
+        font-size: 80%;
+    }
+
+    .model-page {
+        padding-bottom: 15%; /* Makes up for img size difference */
+    }
+
+    .apple-page {
+        padding-bottom: 15%;
+    }
+
+    .button-info {
+        font-size: 250%;
+    }
+
+
+
+    /*------  CONTACT PAGE -----------*/
+
+    .contact-form {
+        margin-top: -15%;
+        font-size: 80%;
+    }
+
+
+
+    /*------  BLOG PAGE -----------*/
+
+    .first-line {
+
+    }
+
+    .second-line {
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+
+    .third-line {
+        padding-top: 30%;
+
+    }
+
+}

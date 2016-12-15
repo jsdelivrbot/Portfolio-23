@@ -1,0 +1,314 @@
+body {
+    font-size: 20px;
+}
+
+/*------------------------------------------------------
+HEADER PAGE
+-------------------------------------------------------*/
+
+.header {
+    text-align: center;
+    background: url('/img/paint-min.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.name {
+    float: right;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.name h1 {
+    text-transform: uppercase;
+    color: black;
+    font-family: 'Oswald', sans-serif;
+    font-size: 300%;
+}
+.name h5 {
+    color: grey;
+    font-family: 'Yrsa', serif;
+    font-size: 150%;
+    float: right;
+    padding-top: -1%;
+    margin-top: -5%;;
+}
+
+.social-links {
+    float: right;
+    padding-top: 3%;
+    font-size: 175%;
+}
+
+.linkedin {
+    color: #1E8BC3;
+    transition: all .2s ease-in-out;
+}
+
+.github {
+    color: black;
+    transition: all .2s ease-in-out;
+}
+
+.instagram {
+    color: #2980b9;
+    transition: all .2s ease-in-out;
+}
+
+.dribbble {
+    color: #FF69B4;
+    transition: all .2s ease-in-out;
+}
+
+.fa-github:hover {
+    transform: scale(1.2);
+    color: #222;
+    -webkit-transition: all .35s ease-out;
+    -moz-transition: all .35s ease-out;
+    -o-transition: all .35s ease-out;
+    -ms-transition: all .35s ease-out;
+    transition: all .35s ease-out;
+}
+
+.fa-linkedin:hover {
+    transform: scale(1.2);
+    color: #43ace2;
+    -webkit-transition: all .35s ease-out;
+    -moz-transition: all .35s ease-out;
+    -o-transition: all .35s ease-out;
+    -ms-transition: all .35s ease-out;
+    transition: all .35s ease-out;
+}
+
+.fa-instagram:hover {
+    transform: scale(1.2);
+    color: #4ea1d8;
+    -webkit-transition: all .35s ease-out;
+    -moz-transition: all .35s ease-out;
+    -o-transition: all .35s ease-out;
+    -ms-transition: all .35s ease-out;
+    transition: all .35s ease-out;
+}
+
+.fa-dribbble:hover {
+    transform: scale(1.2);
+    color: #ffadd6;
+    -webkit-transition: all .35s ease-out;
+    -moz-transition: all .35s ease-out;
+    -o-transition: all .35s ease-out;
+    -ms-transition: all .35s ease-out;
+    transition: all .35s ease-out;
+}
+
+
+/*------------------------------------------------------
+ABOUT PAGE
+-------------------------------------------------------*/
+
+#about {
+    background-color: #ecf0f1;
+}
+
+.about-you h2 {
+    font-family: 'Yrsa', serif;
+    font-size: 200%;
+    text-align: center;
+    padding-bottom: 2%;
+}
+
+.about-me h2 {
+    font-family: 'Yrsa', serif;
+    font-size: 200%;
+    text-align: center;
+    padding-bottom: 2%;
+}
+
+.you-text,
+.me-text {
+    font-family: 'Roboto', sans-serif;
+    line-height: 175%;
+}
+
+
+/*------------------------------------------------------
+WORK PAGE
+-------------------------------------------------------*/
+
+.work {
+    background-color: #ecf0f1;
+}
+
+.button-info {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.work-title {
+    text-align: center;
+    color: black;
+    font-family: 'Yrsa', serif;
+}
+
+
+/*-------------  MODEL SLIDE  --------------*/
+
+.model-page {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    margin-bottom: -10%;
+}
+
+/*-------------  APPLE SLIDE  --------------*/
+
+.apple-page {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    margin-bottom: -10%;
+}
+
+/*-------------  DRIBBBLE SLIDE  --------------*/
+.dribbble-page {
+    background-color: #FF69B4;
+}
+
+.dribbble-icon {
+    color: white;
+    text-align: center;
+    font-size: 500%;
+}
+
+.info h3 {
+    color: white;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 7%;
+}
+
+.dribbble-button,
+.github-button {
+    font-size: 400%;
+}
+
+
+.button-info {
+    text-align: center;
+    font-size: 300%;
+}
+
+/*-------------  ARROW CUSTOMIZATION  --------------*/
+
+.fp-controlArrow.fp-prev {
+    left: 30px;
+    border: none;
+    width: 50px;
+    height: 101px;
+    background: url(/img/Back.png) no-repeat;
+    cursor: pointer;
+}
+.fp-controlArrow.fp-next {
+    right: 40px;
+    border: none;
+    width: 50px;
+    height: 101px;
+    background: url(/img/Forward.png) no-repeat;
+    cursor: pointer;
+}
+
+
+
+/*------------------------------------------------------
+CONTACT PAGE
+-------------------------------------------------------*/
+
+#contact {
+    background: #466368;
+    background: radial-gradient(#648880, #293f50);
+    color: navajowhite;
+}
+
+.check-box {
+    color: black;
+    float: right;
+    font-size: 100%;
+    font-family: 'Raleway', sans-serif;
+}
+
+.contact-form {
+    text-align: center;
+}
+
+.touch {
+    font-family: 'Raleway', sans-serif;
+    font-size: 300%;
+}
+
+.touch2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 200%;
+}
+
+
+
+/*------------------------------------------------------
+BLOG PAGE
+-------------------------------------------------------*/
+
+#blog {
+    background: url('../img/blog-min.jpg') no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.first-line {
+    color: navajowhite;
+    font-size: 150%;
+    font-family: 'Aref Ruqaa', serif;
+}
+
+.second-line {
+    color: navajowhite;
+    font-family: 'Dosis', sans-serif;
+    padding-bottom: 5%;
+}
+
+.third-line {
+    text-align: center;
+}
+
+
+
+body{
+    width: 100%;
+
+    overflow-x: hidden;
+}
+
+
+.wow {
+    visibility: hidden;
+}
+
+#first {
+    -webkit-animation-duration: 2s;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-iteration-count: ;
+}
+
+#second {
+    -webkit-animation-duration: 2s;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-iteration-count: ;
+}
+
