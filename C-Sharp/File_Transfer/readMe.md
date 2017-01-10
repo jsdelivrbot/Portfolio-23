@@ -1,4 +1,4 @@
-Scenario: 
+### Scenario: 
 
 Your company's users create or edit a collection of text files
 throughout the day. These text files represent data about customer
@@ -14,7 +14,7 @@ manually. This is very expensive in terms of manpower.
 You have been asked to create a script that will automate this task,
 saving the company a lot of money over the long term.
 
-Impediments:
+### Impediments:
 
 After solving a simple problem figuring out why my variable filesInfo wouldn't exist due to the fact it was created in a for loop and
 wouldn't be available to any other code outside of it, I finally created a script that had no errors. The problem was though that none
