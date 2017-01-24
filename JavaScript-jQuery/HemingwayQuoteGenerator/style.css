@@ -1,0 +1,45 @@
+.page {
+    background: url('skyline.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+}
+
+.title h1 {
+    font-family: 'Tangerine', cursive;
+    font-size: 500%;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.buttons {
+    text-align: center;
+    vertical-align: top;
+    display: inline-block;
+}
+
+.btn {
+    margin: 0 10px !important;
+}
+
+hr { 
+    border: 1px solid #ccc;
+    border-style: inset;
+}
+
+.left-quote {
+    float: left;
+    padding-top: 70px;
+}
+
+.writing {
+    font-family: 'Bad Script', cursive;
+    font-size: 200%;
+    text-align: center;
+}
+
+.right-quote {
+    float: right !important;
+}
