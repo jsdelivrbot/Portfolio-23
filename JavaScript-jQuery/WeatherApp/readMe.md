@@ -10,5 +10,5 @@ if (navigator.geolocation) {
 }
 
 Chrome and Firefox had realeased an update that prevents browsers from collecting location data if it is not from a https address.
-In order to fix this I used a simple API location data which you can find here: http://ip-api.com/json
+In order to fix this I used a simple API location collector which you can find here: http://ip-api.com/json.
 I then created a JSON call and concatenated it with my "var api" in order to get the correct latitude and longitude for my program.
