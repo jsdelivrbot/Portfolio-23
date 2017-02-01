@@ -8,6 +8,11 @@ Check out my LinkedIn(https://www.linkedin.com/in/templenaylor) and my blog to l
 #### Websites
 * [I-website](./Websites/Iwebsites)
 
+### JavaScript/jQuery
+* [DrumKit](./JavaScript-jQuery/DrumKit)
+* [HemingwayQuoteGenerator](./JavaScript-jQuery/HemingwayQuoteGenerator)
+* [WeatherApp](./JavaScript-jQuery/WeatherApp)
+
 
 #### Database & SQL
 * [Database & SQL Examples](./Database-SQL)
