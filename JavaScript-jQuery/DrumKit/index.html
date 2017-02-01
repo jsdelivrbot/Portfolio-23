@@ -15,6 +15,8 @@
 
         <div class="container">
             
+            <!-- First row of keys -->
+            
             <div class="row first-line">
 
                 <div class="col-2">
@@ -69,7 +71,7 @@
 
             </div>
             
-            
+            <!-- Second row of keys -->
             
             <div class="row second-line">
                    <div class="col-4">
@@ -97,6 +99,8 @@
             </div>
         </div>
 
+        <!-- Audio links to keys -->
+        
         <audio data-key="83" src="jap/clap1.wav"></audio>
         <audio data-key="68" src="jap/crash1.wav"></audio>
         <audio data-key="70" src="jap/hihat1.wav"></audio>
@@ -109,25 +113,6 @@
 
 
 
-        <script>
-            
-            function playSound(e) {
-                const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
-                const key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
-                if (!audio) return;
-                audio.currentTime = 0;
-                audio.play(); 
-                key.classList.add('playing'); 
-            }
-
-            function removeTransition(e) {
-                if (e.propertyName !== 'transform') return;
-                this.classList.remove('playing');
-            }
-
-            const keys = document.querySelectorAll('.key');
-            keys.forEach(key => key.addEventListener('transitionend', removeTransition));
-            window.addEventListener('keydown', playSound);
-        </script>
+        <script src="script.js"></script>
     </body>
 </html>
