@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Bahiana" rel="stylesheet">
+    </head>
+    <body>
+
+        <div class="container">
+            
+            <div class="row first-line">
+
+                <div class="col-2">
+                    <div data-key="83" class="key">
+                        <kbd>S</kbd>
+                        <span class="sound">CLAP</span>
+                    </div>
+                </div>
+
+
+                <div class="col-2">
+                    <div data-key="68" class="key">
+                        <kbd>D</kbd>
+                        <span class="sound">CRASH</span>
+                    </div>
+                </div>
+
+
+                <div class="col-2">
+                    <div data-key="70" class="key">
+                        <kbd>F</kbd>
+                        <span class="sound">HI</span>
+                    </div>
+                </div>
+
+
+
+
+
+                <div class="col-2">
+                    <div data-key="74" class="key">
+                        <kbd>J</kbd>
+                        <span class="sound">KICK</span>
+                    </div>
+                </div>
+
+
+                <div class="col-2">
+                    <div data-key="75" class="key">
+                        <kbd>K</kbd>
+                        <span class="sound">RIDE</span>
+                    </div>
+                </div>
+
+
+                <div class="col-2">
+                    <div data-key="76" class="key">
+                        <kbd>L</kbd>
+                        <span class="sound">SNAP</span>
+                    </div>
+                </div>
+
+            </div>
+            
+            
+            
+            <div class="row second-line">
+                   <div class="col-4">
+                    <div data-key="65" class="key">
+                        <kbd>A</kbd>
+                        <span class="sound">SNARE</span>
+                    </div>
+                </div>
+                
+                
+                   <div class="col-4">
+                    <div data-key="32" class="key">
+                        <kbd>BAR</kbd>
+                        <span class="sound">808</span>
+                    </div>
+                </div>
+                
+                
+                   <div class="col-4">
+                    <div data-key="186" class="key">
+                        <kbd>;</kbd>
+                        <span class="sound">TOM</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <audio data-key="83" src="jap/clap1.wav"></audio>
+        <audio data-key="68" src="jap/crash1.wav"></audio>
+        <audio data-key="70" src="jap/hihat1.wav"></audio>
+        <audio data-key="74" src="jap/kick1.wav"></audio>
+        <audio data-key="75" src="jap/ride1.wav"></audio>
+        <audio data-key="76" src="jap/snap1.wav"></audio>
+        <audio data-key="65" src="jap/snare1.wav"></audio>
+        <audio data-key="32" src="jap/8081.wav"></audio>
+        <audio data-key="186" src="jap/tom1.wav"></audio>
+
+
+
+        <script>
+            
+            function playSound(e) {
+                const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
+                const key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
+                if (!audio) return;
+                audio.currentTime = 0;
+                audio.play(); 
+                key.classList.add('playing'); 
+            }
+
+            function removeTransition(e) {
+                if (e.propertyName !== 'transform') return;
+                this.classList.remove('playing');
+            }
+
+            const keys = document.querySelectorAll('.key');
+            keys.forEach(key => key.addEventListener('transitionend', removeTransition));
+            window.addEventListener('keydown', playSound);
+        </script>
+    </body>
+</html>
