@@ -105,5 +105,10 @@ function newQuote() {
     document.getElementById('quoteDisplay').innerHTML = quotes[randomNumber];
 };
 
-
+function tweetIt(){
+  // Get the contents of your current tweet
+  var tweet = document.getElementById('quoteDisplay').textContent;
+  // Open a new window with that tweet content
+  window.open("https://twitter.com/intent/tweet?text=" + tweet);
+};
 
