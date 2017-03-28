@@ -1,3 +1,3 @@
 ### Mock Music Player
 
-A non functional(yet) music player that displays songs and time with functional play, next and stop buttons.
+A music player UI that displays songs with their respective time frame, artists, and titles with functional play, next and stop buttons. 
