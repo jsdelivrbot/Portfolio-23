@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>AJAX Flickr Photo Search</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
   <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="main.css">
   <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
@@ -14,11 +15,20 @@
       <div class="contained">
         <div class="grid-100">
           <div class="heading">
-            <h1>Flickr Photo Search</h1>
+            <h1 style="font-size: 350%;">Flickr Photo Search</h1>
+            <h2>Pull desired photos from Flickr with a simple API search. Click on photo to get to Flickr location.</h2>
             <form>
               <label for="search">Type a search term</label>
-              <input type="search" name="search" id="search">
-              <input type="submit" value="Search" id="submit">
+              <div class="row">
+                <div class="col-8">
+                  <input type="search" class="form-control" name="search" id="search">
+                </div>
+                <div class="col-4">
+                  <input type="submit" class="btn btn btn-outline-primary" value="Search" id="submit">
+                </div>
+              </div>
+              
+              
             </form>
             
           </div>
