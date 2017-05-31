@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+        <!-- Style -->
+        <link rel="stylesheet" href="style/style.css" type="text/css">
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Lato|Raleway" rel="stylesheet">
+        <!-- Icons -->
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    </head>
+    <body>
+
+        <!------------------------ HEADER ------------------------->
+
+        <div class="container">
+
+            <div class="row text-center">
+                <div class="col-12">
+                    <img src="img/billharris.png" class="img-fluid bill">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1 class="signUpTitle">Sign Up</h1>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <hr class="title-divider">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <div id="error"><? echo $error.$successMessage; ?></div>
+                    <form>
+
+                        <div class="input-group margin-bottom-sm">
+                            <span class="input-group-addon"><i class="fa fa-user fa-fw"></i></span>
+                            <input class="form-control" type="name" id="name" placeholder="What's your name?">
+                        </div>
+                        <br />
+                        <div class="input-group margin-bottom-sm">
+                            <span class="input-group-addon"><i class="fa fa-envelope-o fa-fw"></i></span>
+                            <input class="form-control" type="email" id="email" placeholder="Enter your email address">
+                        </div>
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                        <br />
+                        <label for="timezone">Select timezone:</label>
+
+                        <select class="form-control" id="timezone">
+
+
+                            <option value="" selected="selected">select your timezone</option>
+                            <option value="(GMT -5:00) Eastern Time (US & Canada), Bogota, Lima">(GMT -5:00) Eastern Time (US & Canada), Bogota, Lima</option>
+                            <option value="(GMT -6:00) Central Time (US & Canada), Mexico City">(GMT -6:00) Central Time (US & Canada), Mexico City</option>
+                            <option value="(GMT -7:00) Mountain Time (US & Canada)">(GMT -7:00) Mountain Time (US & Canada)</option>
+                            <option value="(GMT -8:00) Pacific Time (US & Canada)">(GMT -8:00) Pacific Time (US & Canada)</option>
+                            <option value="(GMT -9:00) Alaska">(GMT -9:00) Alaska</option>
+                            <option value="">--------------</option>
+                            <option value="(GMT -12:00) Eniwetok, Kwajalein">(GMT -12:00) Eniwetok, Kwajalein</option>
+                            <option value="(GMT -11:00) Midway Island, Samoa">(GMT -11:00) Midway Island, Samoa</option>
+                            <option value="(GMT -10:00) Hawaii">(GMT -10:00) Hawaii</option>
+                            <option value="(GMT -9:30) Taiohae">(GMT -9:30) Taiohae</option>
+                            <option value="(GMT -9:00) Alaska">(GMT -9:00) Alaska</option>
+                            <option value="(GMT -8:00) Pacific Time (US & Canada)">(GMT -8:00) Pacific Time (US & Canada)</option>
+                            <option value="(GMT -7:00) Mountain Time (US & Canada)">(GMT -7:00) Mountain Time (US & Canada)</option>
+                            <option value="(GMT -6:00) Central Time (US & Canada), Mexico City">(GMT -6:00) Central Time (US & Canada), Mexico City</option>
+                            <option value="(GMT -5:00) Eastern Time (US & Canada), Bogota, Lima">(GMT -5:00) Eastern Time (US & Canada), Bogota, Lima</option>
+                            <option value="(GMT -4:30) Caracas">(GMT -4:30) Caracas</option>
+                            <option value="(GMT -4:00) Atlantic Time (Canada), Caracas, La Paz">(GMT -4:00) Atlantic Time (Canada), Caracas, La Paz</option>
+                            <option value="(GMT -3:30) Newfoundland">(GMT -3:30) Newfoundland</option>
+                            <option value="(GMT -3:00) Brazil, Buenos Aires, Georgetown">(GMT -3:00) Brazil, Buenos Aires, Georgetown</option>
+                            <option value="(GMT -2:00) Mid-Atlantic">(GMT -2:00) Mid-Atlantic</option>
+                            <option value="(GMT -1:00) Azores, Cape Verde Islands">(GMT -1:00) Azores, Cape Verde Islands</option>
+                            <option value="(GMT +0:00) Western Europe Time, London, Lisbon, Casablanca">(GMT +0:00) Western Europe Time, London, Lisbon, Casablanca</option>
+                            <option value="(GMT +1:00) Brussels, Copenhagen, Madrid, Paris">(GMT +1:00) Brussels, Copenhagen, Madrid, Paris</option>
+                            <option value="(GMT +2:00) Kaliningrad, South Africa">(GMT +2:00) Kaliningrad, South Africa</option>
+                            <option value="(GMT +3:00) Baghdad, Riyadh, Moscow, St. Petersburg">(GMT +3:00) Baghdad, Riyadh, Moscow, St. Petersburg</option>
+                            <option value="(GMT +3:30) Tehran">(GMT +3:30) Tehran</option>
+                            <option value="(GMT +4:00) Abu Dhabi, Muscat, Baku, Tbilisi">(GMT +4:00) Abu Dhabi, Muscat, Baku, Tbilisi</option>
+                            <option value="(GMT +4:30) Kabul">(GMT +4:30) Kabul</option>
+                            <option value="(GMT +5:00) Ekaterinburg, Islamabad, Karachi, Tashkent">(GMT +5:00) Ekaterinburg, Islamabad, Karachi, Tashkent</option>
+                            <option value="(GMT +5:30) Bombay, Calcutta, Madras, New Delhi">(GMT +5:30) Bombay, Calcutta, Madras, New Delhi</option>
+                            <option value="(GMT +5:45) Kathmandu, Pokhara">(GMT +5:45) Kathmandu, Pokhara</option>
+                            <option value="(GMT +6:00) Almaty, Dhaka, Colombo">(GMT +6:00) Almaty, Dhaka, Colombo</option>
+                            <option value="(GMT +6:30) Yangon, Mandalay">(GMT +6:30) Yangon, Mandalay</option>
+                            <option value="(GMT +7:00) Bangkok, Hanoi, Jakarta">(GMT +7:00) Bangkok, Hanoi, Jakarta</option>
+                            <option value="(GMT +8:00) Beijing, Perth, Singapore, Hong Kong">(GMT +8:00) Beijing, Perth, Singapore, Hong Kong</option>
+                            <option value="(GMT +8:45) Eucla">(GMT +8:45) Eucla</option>
+                            <option value="(GMT +9:00) Tokyo, Seoul, Osaka, Sapporo, Yakutsk">(GMT +9:00) Tokyo, Seoul, Osaka, Sapporo, Yakutsk</option>
+                            <option value="(GMT +9:30) Adelaide, Darwin">(GMT +9:30) Adelaide, Darwin</option>
+                            <option value="(GMT +10:00) Eastern Australia, Guam, Vladivostok">(GMT +10:00) Eastern Australia, Guam, Vladivostok</option>
+                            <option value="(GMT +10:30) Lord Howe Island">(GMT +10:30) Lord Howe Island</option>
+                            <option value="(GMT +11:00) Magadan, Solomon Islands, New Caledonia">(GMT +11:00) Magadan, Solomon Islands, New Caledonia</option>
+                            <option value="(GMT +11:30) Norfolk Island">(GMT +11:30) Norfolk Island</option>
+                            <option value="(GMT +12:00) Auckland, Wellington, Fiji, Kamchatka">(GMT +12:00) Auckland, Wellington, Fiji, Kamchatka</option>
+                            <option value="(GMT +12:45) Chatham Islands">(GMT +12:45) Chatham Islands</option>
+                            <option value="(GMT +13:00) Apia, Nukualofa">(GMT +13:00) Apia, Nukualofa</option>
+                            <option value="(GMT +14:00) Line Islands, Tokelau">(GMT +14:00) Line Islands, Tokelau</option>
+
+                        </select>
+                        <br>
+                        <br>
+
+                        <button type="submit" id="submit" class="btn btn-primary" href="#">Sign Up Now</button>
+                        <a href="/salespage.html" class="btn btn-outline-danger">Cancel</a>
+                    </form>
+                </div>
+            </div>
+
+        </div> <!-- .end container -->
+
+
+
+        <!------------------------ FOOTER ------------------------->
+
+        <div class="container footer">
+
+            <div class="row text-center">
+                <div class="col-12">
+                    <p class="copyright">© 2017 Centerpointe Research Institute, Inc. All Rights Reserved.</p>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
+
+        <script type="text/javascript">
+
+            $("form").submit(function (e) {
+
+                e.preventDefault();
+
+                var error = "";
+
+                if ($("#name").val() == "") {
+                    error += "Your name is required.<br>";
+                }
+
+                if ($("#email").val() == "") {
+                    error += "Your email is required.<br>";
+                }
+
+                if ($("#timezone").val() == "") {
+                    error += "The timezone field is required.";
+                }
+
+                if (error != "") {
+
+                    $("#error").html('<div class="alert alert-danger" role="alert"><p><strong>There were error(s) in your form:</strong></p>' + error + '</div>');
+                } else {
+                    $("form").unbind("submit").submit();
+                }
+
+
+            });
+
+
+        </script>
+    </body>

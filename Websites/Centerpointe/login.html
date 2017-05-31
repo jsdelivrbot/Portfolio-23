@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+        <!-- Style -->
+        <link rel="stylesheet" href="style/style.css" type="text/css">
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Lato|Raleway" rel="stylesheet">
+        <!-- Icons -->
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    </head>
+    <body>
+
+        <!------------------------ HEADER ------------------------->
+
+        <div class="container">
+
+            <div class="row text-center">
+                <div class="col-12">
+                    <img src="img/billharris.png" class="img-fluid bill">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="col-12">
+                        <!-- Card -->
+                        <article class="card cardSizeLogin animated fadeInLeft">
+                            <img class="card-img-top img-responsive" src="/img/master.png" alt="Master Your Life" />
+                            <div class="card-block">
+                                <h4 class="card-title text-center">Login to your Account</h4>
+                                <div id="error"><? echo $error.$successMessage; ?></div>
+                                <form>
+
+                                    <div class="input-group margin-bottom-sm">
+                                        <span class="input-group-addon"><i class="fa fa-envelope-o fa-fw"></i></span>
+                                        <input class="form-control" type="email" id="email" placeholder="Enter your email address">
+                                    </div>
+                                    <br>
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i class="fa fa-key fa-fw"></i></span>
+                                        <input class="form-control" type="password" id="password" placeholder="Enter your password">
+                                    </div>
+                                    <p><a href="#">I forgot my password</a></p>
+
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input" type="checkbox" value="">
+                                            Remember me on this computer
+                                        </label>
+                                    </div>
+                                    <br>
+                                    <button type="submit" id="submit" class="btn btn-primary" href="#">Login</button>
+                                    <a href="/salespage.html" class="btn btn-outline-danger">Cancel</a>
+                                </form>
+                            </div>
+                        </article><!-- .end Card -->
+                    </div>
+                </div>
+
+            </div><!-- .end container -->
+
+
+
+            <!------------------------ FOOTER ------------------------->
+
+            <div class="container footer">
+
+                <div class="row text-center">
+                    <div class="col-12">
+                        <p class="copyright">© 2017 Centerpointe Research Institute, Inc. All Rights Reserved.</p>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+
+
+
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
+
+            <script type="text/javascript">
+
+                $("form").submit(function (e) {
+
+                    e.preventDefault();
+
+                    var error = "";
+
+                    if ($("#email").val() == "") {
+                        error += "Your email is required.<br>";
+                    }
+
+                    if ($("#password").val() == "") {
+                        error += "Your password is required.<br>";
+                    }
+
+                    if (error != "") {
+
+                        $("#error").html('<div class="alert alert-danger" role="alert"><p><strong>There were error(s) in your form:</strong></p>' + error + '</div>');
+                    } else {
+                        $("form").unbind("submit").submit();
+                    }
+
+
+                });
+
+
+            </script>
+            </body>

@@ -1,0 +1,558 @@
+/*************************************************************************************************
+INDEX PAGE
+*************************************************************************************************/
+
+/***********************
+HEADER
+***********************/
+
+#header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(/img/header-min.jpg);
+    background-size: cover;
+    background-position: center bottom;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+.header-title {
+    font-family: 'Raleway', sans-serif;
+    /*    font-size: 10px;*/
+    color: white;
+    padding-top: 90px;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+}
+
+.header-button {
+    margin-top: 60px;
+}
+
+/* Small Devices, Tablets */
+
+@media only screen and (min-width: 768px) {
+    .header-button {
+        margin-top: 40px;
+    }
+}
+
+
+/* Medium Devices, Desktops */
+
+@media only screen and (min-width: 992px) {
+    .header-title h1{
+        padding-top: 100px;
+        font-size: 50px;
+    }
+}
+
+
+/* Large Devices, Wide Screens */
+
+@media only screen and (min-width: 1200px) {
+    .header-title {
+        padding-top: 170px;
+        font-size: 50px;
+    }
+    .header-button {
+        margin-top: 30px;
+    }
+}
+
+/* ----- BUTTONS ----- */
+
+.btnH:link,
+.btnH:visited,
+input[type=submit] {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn-full:link,
+.btn-full:visited,
+input[type=submit] {
+    background-color: #F39C12;
+    border: 1px solid #F39C12;
+    color: #fff;
+    margin-right: 15px;
+}
+
+.btnH:hover,
+.btnH:active,
+input[type=submit]:hover,
+input[type=submit]:active {
+    background-color: #f5aa32;
+}
+
+.btn-full:hover,
+.btn-full:active {
+    border: 1px solid #000;
+}
+
+.header-subtitle {
+    display: block;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 25px;
+}
+
+.blink_me {
+  animation: blinker 3s linear infinite;
+}
+
+@keyframes blinker {  
+  50% { opacity: 0; }
+}
+
+.header-quoteLeft {
+    font-size: 20px;
+    margin-top: 90px;
+}
+
+.header-quoteRight {
+    font-size: 20px;
+    float: right;
+    margin-bottom: 90px;
+}
+
+/* Small Devices, Tablets */
+
+@media only screen and (min-width: 768px) {
+    .header-subtitle {
+        font-size: 30px;
+    }
+}
+
+
+/* Medium Devices, Desktops */
+
+@media only screen and (min-width: 992px) {
+    .header-subtitle {
+        font-size: 30px;
+    }
+}
+
+
+/* Large Devices, Wide Screens */
+
+@media only screen and (min-width: 1200px) {
+    .header-subtitle{
+        font-size: 30px;
+    }
+}
+
+
+
+
+
+/***********************
+FEATURES
+***********************/
+
+#features {
+    /*    height: 100vh;*/
+    margin-bottom: 30px;
+}
+
+/*------Cards ----*/
+
+.card img{
+    max-width:100%;
+}
+
+.card-title {
+    font-family: 'Lato', sans-serif;
+}
+
+.note h6{
+    padding-top: 4%;
+    font-family: 'Raleway', sans-serif;
+    font-size: 150%;
+    color: black;
+    text-align: center;
+
+}
+
+/*------Card Overlays ----*/
+
+.cardSize {
+    width: 100%;
+    margin: 0 auto; /* Added */
+    float: none; /* Added */
+    margin-top: 15px;
+    margin-bottom: 40px; /* Added */
+}
+
+/* Medium Devices, Desktops */
+
+@media only screen and (min-width: 992px) {
+    .cardSize {
+        width: 80%;
+    }
+}
+
+
+/* Large Devices, Wide Screens */
+
+@media only screen and (min-width: 1200px) {
+    .cardSize {
+        width: 80%;
+    }
+}
+
+a {
+    -webkit-transition: .25s all;
+    transition: .25s all;
+}
+.card {
+    overflow: hidden;
+    box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.16), 0 12px 20px 0 rgba(0, 0, 0, 0.12);
+    -webkit-transition: .25s box-shadow;
+    transition: .25s box-shadow;
+}
+.card:focus, .card:hover {
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.38), 0 4px 15px 0 rgba(0, 0, 0, 0.35);
+}
+.card-inverse .card-img-overlay {
+    background-color: rgba(51, 51, 51, 0.85);
+    border-color: rgba(51, 51, 51, 0.85);
+}
+
+/* ----- BUTTONS ----- */
+
+.btn-ghost:link,
+.btn-ghost:visited {
+    border: 1px solid #F39C12;
+    color: #000;
+    font-family: 'Lato', sans-serif;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+    border: 1px solid #F39C12;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+}
+
+.features-title {
+    font-family: 'Lato', sans-serif;
+    font-size: 17px;
+    color: black;
+    text-decoration: underline;
+}
+
+/* Small Devices, Tablets */
+
+@media only screen and (min-width: 768px) {
+    .features-title {
+        font-size: 30px;
+    }
+}
+
+
+/* Medium Devices, Desktops */
+
+@media only screen and (min-width: 992px) {
+    .features-title {
+        font-size: 40px;
+    }
+}
+
+
+/* Large Devices, Wide Screens */
+
+@media only screen and (min-width: 1200px) {
+    .features-title {
+        font-size: 40px;
+    }
+}
+
+
+
+
+
+/***********************
+ALREADY SIGNED UP?
+***********************/
+
+.signed-up {
+    margin-top: 90px;
+}
+
+.signed-up-card {
+    border-color: #5bc0de;
+}
+
+.card-header,
+.suTitle,
+.card-text {
+    color: #5bc0de;
+}
+
+.note {
+    padding-top: 15px;
+}
+
+.fair-well {
+    padding-top: 60px;
+}
+
+.sign-off {
+    padding-top: 15px;
+}
+
+
+
+
+
+/***********************
+FOOTER
+***********************/
+
+.footer {
+    margin-top: 60px;
+}
+
+.bill {
+    max-width: 100%;
+    height: auto;
+}
+
+.copyright {
+    color: grey;
+    font-size: 12px;
+}
+
+
+
+/*************************************************************************************************
+SIGN UP PAGE
+*************************************************************************************************/
+
+.signUpTitle {
+    color: #5bc0de;
+    font-size: 60px;
+    font-family: 'Raleway', sans-serif;
+    padding-top: 30px;
+}
+
+.title-divider {
+    border-top: 1px solid #5bc0de;
+    width: 300px;
+    padding-bottom: 20px;
+}
+
+
+
+/*************************************************************************************************
+LOGIN PAGE
+*************************************************************************************************/
+
+.cardSizeLogin {
+    width: 100%;
+    margin: 0 auto; /* Added */
+    float: none; /* Added */
+    margin-top: 15px;
+    margin-bottom: 40px; /* Added */
+}
+
+/* Small Devices, Tablets */
+
+@media only screen and (min-width: 768px) {
+    .cardSizeLogin {
+        width: 100%;
+    }
+}
+
+
+/* Medium Devices, Desktops */
+
+@media only screen and (min-width: 992px) {
+    .cardSizeLogin {
+        width: 70%;
+    }
+}
+
+
+/* Large Devices, Wide Screens */
+
+@media only screen and (min-width: 1200px) {
+    .cardSizeLogin {
+        width: 70%;
+    }
+}
+
+
+/*************************************************************************************************
+COURSE PAGE
+*************************************************************************************************/
+
+
+/***********************
+NAVIGATION
+***********************/
+
+.navbar {
+    width: 100% !important;
+    background-color: rgba(0, 0, 0, 0.95);
+    margin: 0;
+}
+
+.navbar-brand {
+    font-family: 'Raleway', sans-serif;
+    color: white !important;
+    font-size: 30px;
+}
+
+.navbar-nav a {
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif !important;
+    color: white !important;
+}
+
+.nav-link {
+    color: white !important;
+}
+
+.active {
+    color: black !important;
+}
+
+/* change navbar-toggler inside lines color (stroke) */
+.navbar-light span.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#59ABE3' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    color: white;
+}
+/* change hamburger button border color */
+button.navbar-toggler.navbar-toggler-right {
+    border-color: #59ABE3;
+}
+
+.navbar-nav .nav-item:hover {
+    color: black !important;
+    -webkit-transition: color 0.2s;
+}
+
+.basic-principles {
+    margin-top: 30px;
+}
+
+/* ----- BUTTONS ----- */
+
+.btn-ghostBasics:link,
+.btn-ghostBasics:visited {
+    border: 1px solid #59ABE3;
+    color: #000;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+}
+
+.btn-ghostBasics:hover,
+.btn-ghostBasics:active {
+    border: 1px solid #59ABE3;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+}
+
+.btnB:link,
+.btnB:visited,
+input[type=submit] {
+    display: inline-block;
+    padding: 10px 20px;
+    font-weight: 300;
+    text-decoration: none;
+    -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btnB:hover,
+.btnB:active,
+input[type=submit]:hover,
+input[type=submit]:active {
+    background-color: #59ABE3;
+}
+
+.course-types {
+    margin-top: 90px;
+}
+
+.icon {
+    height: 40px;
+    width: 40px;
+    overflow: hidden;
+    text-align: center;
+    color: #3498db;
+}
+.icon:hover{
+    cursor: pointer;
+    color: #5faee3;
+    font-size: 1.25em;
+}
+
+.lesson-title {
+    font-size: 50px;
+    font-family: 'Raleway', sans-serif;
+    padding-top: 15px;
+}
+
+.course-name {
+    font-size: 25px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.lesson-icon {
+    padding-top: 50px;
+}
+
+.delay {
+    -vendor-animation-duration: 3s;
+    -vendor-animation-delay: 2s;
+}
+
+
+.title-divider {
+    border-top: 1px solid #000;
+    width: 100px;
+    padding-bottom: 20px;
+}
+
+
+.cardSizeCourse {
+    width: 100%;
+    margin: 0 auto; /* Added */
+    float: none; /* Added */
+    margin-top: 15px;
+    margin-bottom: 40px; /* Added */
+}
+
+/* Small Devices, Tablets */
+
+@media only screen and (min-width: 768px) {
+
+}
+
+
+/* Medium Devices, Desktops */
+
+@media only screen and (min-width: 992px) {
+    .cardSizeCourse {
+        width: 80%;
+    }
+}
+
+
+/* Large Devices, Wide Screens */
+
+@media only screen and (min-width: 1200px) {
+    .cardSizeCourse {
+        width: 80%;
+    }
+}
+
+
+
+
